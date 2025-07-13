@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arma tu Paquete | Grupo Musical Célula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-200">
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">CÉLULA</a>
+            <nav id="main-nav" class="hidden lg:flex space-x-6 items-center">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="paquetes.html" class="nav-link">Paquetes</a>
+                <a href="arma_tu_paquete.html" class="nav-link active">Arma tu Paquete</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="portal_clientes.html" class="nav-link">Portal Clientes</a>
+                <a href="contacto.html" class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors">Contrataciones</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-feather="menu" class="text-white"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-900">
+            <a href="index.html" class="block py-2 px-6 text-center hover:bg-gray-800">Inicio</a>
+            <a href="nosotros.html" class="block py-2 px-6 text-center hover:bg-gray-800">Nosotros</a>
+            <a href="paquetes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Paquetes</a>
+            <a href="arma_tu_paquete.html" class="block py-2 px-6 text-center hover:bg-gray-800">Arma tu Paquete</a>
+            <a href="galeria.html" class="block py-2 px-6 text-center hover:bg-gray-800">Galería</a>
+            <a href="testimonios.html" class="block py-2 px-6 text-center hover:bg-gray-800">Testimonios</a>
+            <a href="portal_clientes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Portal Clientes</a>
+            <a href="contacto.html" class="block py-4 px-6 text-center bg-yellow-500 text-gray-900 font-bold">Contrataciones</a>
+        </div>
+    </header>
+    <main>
+        <div id="page-build-package" class="page-section active">
+            <div class="container mx-auto px-6 py-20" data-aos="fade-in">
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold mb-4">Arma tu Paquete a la Medida</h1>
+                    <p class="text-xl text-gray-400 max-w-3xl mx-auto">Selecciona los servicios que necesitas y obtén una cotización personalizada al instante.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2">
+                        <div class="mb-12">
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-6">1. Elige las Horas de Música</h2>
+                            <div id="hours-options" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <label><input type="radio" name="hours" class="hidden" value="3" data-price="10000" data-name="3 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>3</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="4" data-price="12500" data-name="4 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>4</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="5" data-price="15000" data-name="5 Horas de Música" checked><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>5</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="6" data-price="17000" data-name="6 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>6</strong> Horas</span></label>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-6">2. Agrega Servicios Adicionales</h2>
+                            <div id="addons-options" class="space-y-4">
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="iluminacion_pro" data-price="3500" data-name="Iluminación Robótica Láser y Humo Inteligente"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="sun" class="mr-3"></i> Iluminación Robótica Láser y Humo Inteligente</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="dj_profesional" data-price="2000" data-name="DJ Profesional en descansos"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="headphones" class="mr-3"></i> DJ Profesional en descansos</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="pantalla_led" data-price="3000" data-name="Pantalla LED Gigante"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="tv" class="mr-3"></i> Pantalla LED Gigante</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="batucada" data-price="1500" data-name="Show de Batucada con Souvenirs"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="gift" class="mr-3"></i> Show de Batucada con Souvenirs</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="show_80s" data-price="2000" data-name="Show Temático de los 80s"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="disc" class="mr-3"></i> Show Temático de los 80s</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-xl sticky top-28">
+                            <h2 class="text-3xl font-bold mb-6 text-center">Tu Paquete</h2>
+                            <div id="summary-list" class="space-y-3 mb-6 border-b border-gray-700 pb-6 text-lg"></div>
+                            <div class="flex justify-between items-center text-2xl font-bold mb-6">
+                                <span>Total (MXN):</span>
+                                <span id="total-price">$0.00</span>
+                            </div>
+                            <button id="request-quote-btn" class="w-full bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors text-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>Solicitar Cotización</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-12 text-center text-gray-400">
+            <div class="mb-10" data-aos="fade-up">
+                <h3 class="text-lg font-bold text-gray-300 mb-6">Aceptamos</h3>
+                <div class="flex justify-center items-center flex-wrap gap-x-8 gap-y-4 text-gray-500">
+                    <i class="fab fa-cc-visa fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-mastercard fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-amex fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-credit-card fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-transfer fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-wave fa-2x hover:text-white transition"></i>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4"><a href="#" class="hover:text-yellow-400"><i data-feather="facebook"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="instagram"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="youtube"></i></a></div>
+            <p>&copy; 2025 Grupo Musical Célula. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

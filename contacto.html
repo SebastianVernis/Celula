@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Grupo Musical Célula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-200">
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">CÉLULA</a>
+            <nav id="main-nav" class="hidden lg:flex space-x-6 items-center">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="paquetes.html" class="nav-link">Paquetes</a>
+                <a href="arma_tu_paquete.html" class="nav-link">Arma tu Paquete</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="portal_clientes.html" class="nav-link">Portal Clientes</a>
+                <a href="contacto.html" class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors">Contrataciones</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-feather="menu" class="text-white"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-900">
+            <a href="index.html" class="block py-2 px-6 text-center hover:bg-gray-800">Inicio</a>
+            <a href="nosotros.html" class="block py-2 px-6 text-center hover:bg-gray-800">Nosotros</a>
+            <a href="paquetes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Paquetes</a>
+            <a href="arma_tu_paquete.html" class="block py-2 px-6 text-center hover:bg-gray-800">Arma tu Paquete</a>
+            <a href="galeria.html" class="block py-2 px-6 text-center hover:bg-gray-800">Galería</a>
+            <a href="testimonios.html" class="block py-2 px-6 text-center hover:bg-gray-800">Testimonios</a>
+            <a href="portal_clientes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Portal Clientes</a>
+            <a href="contacto.html" class="block py-4 px-6 text-center bg-yellow-500 text-gray-900 font-bold">Contrataciones</a>
+        </div>
+    </header>
+    <main>
+        <div id="page-contacto" class="page-section active">
+            <section class="py-20 bg-gray-800">
+                <div class="container mx-auto px-6" data-aos="fade-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 class="text-5xl font-bold mb-4">¿Listos para la Fiesta?</h1>
+                            <p class="text-gray-400 mb-8 text-lg">Envíanos los detalles de tu evento y te prepararemos una cotización a la medida. ¡Hagamos que tu celebración sea legendaria!</p>
+                            <div class="space-y-4">
+                                <a href="https://wa.me/5215512345678" target="_blank" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="message-square" class="mr-3"></i> WhatsApp: 55 1234 5678</a>
+                                <a href="tel:+525512345678" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="phone" class="mr-3"></i> Teléfono: 55 1234 5678</a>
+                                <a href="mailto:contacto@grupocelula.com" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="mail" class="mr-3"></i> email: contacto@grupocelula.com</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 p-8 rounded-lg shadow-xl">
+                            <form>
+                                <div class="mb-4"><label for="name" class="block mb-2 font-bold">Nombre</label><input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"></div>
+                                <div class="mb-4"><label for="email" class="block mb-2 font-bold">Email</label><input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div><label for="event-type" class="block mb-2 font-bold">Tipo de Evento</label><select id="event-type" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"><option>Boda</option><option>XV Años</option><option>Corporativo</option><option>Otro</option></select></div>
+                                    <div><label for="event-date" class="block mb-2 font-bold">Fecha</label><input type="date" id="event-date" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500" style="color-scheme: dark;"></div>
+                                </div>
+                                <div class="mb-4"><label for="message" class="block mb-2 font-bold">Mensaje</label><textarea id="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Cuéntanos más..."></textarea></div>
+                                <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors">Enviar Solicitud</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-12 text-center text-gray-400">
+            <div class="mb-10" data-aos="fade-up">
+                <h3 class="text-lg font-bold text-gray-300 mb-6">Aceptamos</h3>
+                <div class="flex justify-center items-center flex-wrap gap-x-8 gap-y-4 text-gray-500">
+                    <i class="fab fa-cc-visa fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-mastercard fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-amex fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-credit-card fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-transfer fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-wave fa-2x hover:text-white transition"></i>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4"><a href="#" class="hover:text-yellow-400"><i data-feather="facebook"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="instagram"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="youtube"></i></a></div>
+            <p>&copy; 2025 Grupo Musical Célula. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

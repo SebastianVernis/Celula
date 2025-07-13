@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Grupo Musical Célula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-200">
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">CÉLULA</a>
+            <nav id="main-nav" class="hidden lg:flex space-x-6 items-center">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link active">Nosotros</a>
+                <a href="paquetes.html" class="nav-link">Paquetes</a>
+                <a href="arma_tu_paquete.html" class="nav-link">Arma tu Paquete</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="portal_clientes.html" class="nav-link">Portal Clientes</a>
+                <a href="contacto.html" class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors">Contrataciones</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-feather="menu" class="text-white"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-900">
+            <a href="index.html" class="block py-2 px-6 text-center hover:bg-gray-800">Inicio</a>
+            <a href="nosotros.html" class="block py-2 px-6 text-center hover:bg-gray-800">Nosotros</a>
+            <a href="paquetes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Paquetes</a>
+            <a href="arma_tu_paquete.html" class="block py-2 px-6 text-center hover:bg-gray-800">Arma tu Paquete</a>
+            <a href="galeria.html" class="block py-2 px-6 text-center hover:bg-gray-800">Galería</a>
+            <a href="testimonios.html" class="block py-2 px-6 text-center hover:bg-gray-800">Testimonios</a>
+            <a href="portal_clientes.html" class="block py-2 px-6 text-center hover:bg-gray-800">Portal Clientes</a>
+            <a href="contacto.html" class="block py-4 px-6 text-center bg-yellow-500 text-gray-900 font-bold">Contrataciones</a>
+        </div>
+    </header>
+    <main>
+        <div id="page-nosotros" class="page-section active">
+            <div class="container mx-auto px-6 py-20">
+                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">Conoce al Equipo</h1>
+                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">Detrás de cada gran evento, hay un equipo de músicos apasionados. Esta es nuestra historia.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12" data-aos="fade-right">
+                    <img src="https://placehold.co/600x600/1F2937/FFFFFF?text=Vocalista" alt="Vocalista" class="rounded-lg shadow-lg w-full">
+                    <div class="md:col-span-2"><h2 class="text-3xl font-bold text-yellow-400">Nombre Vocalista</h2><h3 class="text-xl text-gray-300 mb-4">Voz Principal y Animación</h3><p class="text-gray-400">Con más de 10 años de experiencia en escenarios, [Nombre] es el corazón y la energía de Célula. Su capacidad para conectar con el público y su versatilidad vocal le permiten interpretar desde la balada más emotiva hasta el rock más potente, asegurando que nadie se quede sentado.</p></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12" data-aos="fade-left">
+                     <div class="md:col-span-2 text-right"><h2 class="text-3xl font-bold text-yellow-400">Nombre Guitarrista</h2><h3 class="text-xl text-gray-300 mb-4">Guitarra Eléctrica y Coros</h3><p class="text-gray-400">El maestro de las seis cuerdas. [Nombre] aporta los riffs y solos que definen nuestro sonido. Desde el funk más rítmico hasta el rock más pesado, su precisión y pasión son inconfundibles. También aporta su voz para los coros, enriqueciendo cada canción.</p></div>
+                    <img src="https://placehold.co/600x600/1F2937/FFFFFF?text=Guitarrista" alt="Guitarrista" class="rounded-lg shadow-lg w-full order-first md:order-last">
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12" data-aos="fade-right">
+                    <img src="https://placehold.co/600x600/1F2937/FFFFFF?text=Bajista" alt="Bajista" class="rounded-lg shadow-lg w-full">
+                    <div class="md:col-span-2"><h2 class="text-3xl font-bold text-yellow-400">Nombre Bajista</h2><h3 class="text-xl text-gray-300 mb-4">Bajo y Coros</h3><p class="text-gray-400">El alma del groove. [Nombre] es el encargado de que cada canción tenga ese ritmo que te obliga a moverte. Su sólida técnica y su profundo conocimiento de la música latina y el funk son la base sobre la que se construye toda la energía de la banda.</p></div>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center" data-aos="fade-left">
+                     <div class="md:col-span-2 text-right"><h2 class="text-3xl font-bold text-yellow-400">Nombre Baterista</h2><h3 class="text-xl text-gray-300 mb-4">Batería y Percusión</h3><p class="text-gray-400">El motor de la banda. [Nombre] no solo marca el tiempo, sino que lo hace con una energía contagiosa. Su dinamismo y creatividad en la batería y las percusiones llenan cada rincón del lugar, haciendo imposible quedarse quieto.</p></div>
+                    <img src="https://placehold.co/600x600/1F2937/FFFFFF?text=Baterista" alt="Baterista" class="rounded-lg shadow-lg w-full order-first md:order-last">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-12 text-center text-gray-400">
+            <div class="mb-10" data-aos="fade-up">
+                <h3 class="text-lg font-bold text-gray-300 mb-6">Aceptamos</h3>
+                <div class="flex justify-center items-center flex-wrap gap-x-8 gap-y-4 text-gray-500">
+                    <i class="fab fa-cc-visa fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-mastercard fa-2x hover:text-white transition"></i>
+                    <i class="fab fa-cc-amex fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-credit-card fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-transfer fa-2x hover:text-white transition"></i>
+                    <i class="fas fa-money-bill-wave fa-2x hover:text-white transition"></i>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4"><a href="#" class="hover:text-yellow-400"><i data-feather="facebook"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="instagram"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="youtube"></i></a></div>
+            <p>&copy; 2025 Grupo Musical Célula. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
