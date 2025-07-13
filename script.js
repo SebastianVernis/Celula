@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // --- Cargar Header y Footer reutilizables ---
     const headerHTML = `
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">CÉLULA</a>
+            <a href="index.html" class="text-2xl font-bold text-white tracking-wider">
+                <img src="img/LOGO.png" alt="Grupo Musical Célula" class="h-10">
+            </a>
             <nav id="main-nav" class="hidden lg:flex space-x-6 items-center">
                 <a href="index.html" class="nav-link" data-page="index.html">Inicio</a>
                 <a href="nosotros.html" class="nav-link" data-page="nosotros.html">Nosotros</a>
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="flex justify-center space-x-6 mb-4">
                 <a href="#" class="hover:text-yellow-400"><i data-feather="facebook"></i></a>
                 <a href="#" class="hover:text-yellow-400"><i data-feather="instagram"></i></a>
-                <a href="#" class="hover:text-yellow-400"><i data-feather="youtube"></i></a>
+                <a href="https://youtube.com/@lacelulacdmx?si=m3GGzVXH_IX-dcM8" target="_blank" class="hover:text-yellow-400"><i data-feather="youtube"></i></a>
             </div>
             <p>&copy; 2025 Grupo Musical Célula. Todos los derechos reservados.</p>
         </div>
