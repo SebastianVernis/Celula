@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="mb-10" data-aos="fade-up">
                 <h3 class="text-lg font-bold text-gray-300 mb-6">Aceptamos</h3>
                 <div class="flex justify-center items-center flex-wrap gap-x-8 gap-y-4 text-gray-500">
-                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Visa</title><path d="M7.123 16.216h2.532L11.267 9.3H8.735l-1.612 6.916zm-4.288-.008L.417 6.324h2.5l1.18 6.84-.002.008h.002v-.008L5.275 16.208h-2.44zm11.956 0h2.184l-2.4-9.888h-2.184l2.4 9.888zm-5.064 0l1.6-6.832c.112-.48.424-.76.848-.76.24 0 .6.136.784.344l.384-2.04c-.376-.2-.92-.424-1.744-.424-1.16 0-2.024.7-2.424 2.056L9.587 16.2h2.552l-.184.016z"/></svg>
-                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Mastercard</title><circle cx="7" cy="12" r="7"/><path d="M17 12a7 7 0 11-14 0 7 7 0 0114 0z" fill-opacity=".8"/></svg>
-                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>American Express</title><path d="M22.016 4H1.984C.888 4 0 4.888 0 5.984v12.032C0 19.112.888 20 1.984 20h20.032C23.112 20 24 19.112 24 18.016V5.984C24 4.888 23.112 4 22.016 4zM8.032 15.488H5.48V8.512h2.552v6.976zm4.64-6.976h2.624v1.888H12.64v1.248h2.24v1.888h-2.24v1.952h2.656V15.52h-5.2V8.512h2.528v.008zm6.912 4.168L18.064 8.512h-2.656l-2.4 4.168 2.4 4.224h2.656l-1.136-2.112z"/></svg>
+                    <i data-feather="credit-card" class="h-8 w-8 hover:text-white transition"></i>
+                    <i data-feather="credit-card" class="h-8 w-8 hover:text-white transition"></i>
+                    <i data-feather="credit-card" class="h-8 w-8 hover:text-white transition"></i>
                     <span class="font-bold text-xl hover:text-white transition">CARNET</span>
                     <span class="font-bold text-xl hover:text-white transition">SPEI</span>
                     <i data-feather="dollar-sign" class="h-8 w-8 hover:text-white transition"></i>
