@@ -233,43 +233,47 @@
         <!-- ============= PÁGINA: ARMA TU PAQUETE ========================== -->
         <!-- =============================================================== -->
         <div id="page-build-package" class="page-section">
-            <div class="container mx-auto px-6 py-20">
-                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">Arma tu Propio Paquete</h1>
-                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">Tú tienes el control. Selecciona las opciones que más te gusten y crearemos una cotización a la medida de tu evento soñado.</p>
-                <form id="custom-package-form" class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8" data-aos="zoom-in">
-                    <!-- Horas de Música -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-yellow-400 mb-4">1. Horas de Música</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="horas" value="3" class="hidden"><i data-feather="clock" class="mr-3 text-yellow-400"></i><span class="flex-grow">3 Horas (Esencial)</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="horas" value="5" class="hidden" checked><i data-feather="clock" class="mr-3 text-yellow-400"></i><span class="flex-grow">5 Horas (Recomendado)</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="horas" value="6" class="hidden"><i data-feather="clock" class="mr-3 text-yellow-400"></i><span class="flex-grow">6 Horas (Plus)</span></label>
+            <div class="container mx-auto px-6 py-20" data-aos="fade-in">
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold mb-4">Arma tu Paquete a la Medida</h1>
+                    <p class="text-xl text-gray-400 max-w-3xl mx-auto">Selecciona los servicios que necesitas y obtén una cotización personalizada al instante.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <!-- Columna de opciones -->
+                    <div class="lg:col-span-2">
+                        <div class="mb-12">
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-6">1. Elige las Horas de Música</h2>
+                            <div id="hours-options" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <label><input type="radio" name="hours" class="hidden" value="3" data-price="10000" data-name="3 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>3</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="4" data-price="12500" data-name="4 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>4</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="5" data-price="15000" data-name="5 Horas de Música" checked><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>5</strong> Horas</span></label>
+                                <label><input type="radio" name="hours" class="hidden" value="6" data-price="17000" data-name="6 Horas de Música"><span class="block text-center border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition"><strong>6</strong> Horas</span></label>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-6">2. Agrega Servicios Adicionales</h2>
+                            <div id="addons-options" class="space-y-4">
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="iluminacion_pro" data-price="3500" data-name="Iluminación Robótica Láser y Humo Inteligente"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="sun" class="mr-3"></i> Iluminación Robótica Láser y Humo Inteligente</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="dj_profesional" data-price="2000" data-name="DJ Profesional en descansos"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="headphones" class="mr-3"></i> DJ Profesional en descansos</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="pantalla_led" data-price="3000" data-name="Pantalla LED Gigante"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="tv" class="mr-3"></i> Pantalla LED Gigante</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="batucada" data-price="1500" data-name="Show de Batucada con Souvenirs"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="gift" class="mr-3"></i> Show de Batucada con Souvenirs</span></label>
+                                <label class="flex items-center"><input type="checkbox" name="addon" class="hidden" value="show_80s" data-price="2000" data-name="Show Temático de los 80s"><span class="flex items-center text-lg border-2 border-gray-600 rounded-lg p-4 cursor-pointer hover:border-yellow-400 transition w-full"><i data-feather="disc" class="mr-3"></i> Show Temático de los 80s</span></label>
+                            </div>
                         </div>
                     </div>
-                    <!-- Tamaño del Audio -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-yellow-400 mb-4">2. Tamaño del Audio</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="audio" value="100" class="hidden"><i data-feather="volume-1" class="mr-3 text-yellow-400"></i><span class="flex-grow">Hasta 100 personas</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="audio" value="200" class="hidden" checked><i data-feather="volume-2" class="mr-3 text-yellow-400"></i><span class="flex-grow">Hasta 200 personas</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="radio" name="audio" value="300" class="hidden"><i data-feather="speaker" class="mr-3 text-yellow-400"></i><span class="flex-grow">300+ personas</span></label>
+                    <!-- Columna del resumen -->
+                    <div class="lg:col-span-1">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-xl sticky top-28">
+                            <h2 class="text-3xl font-bold mb-6 text-center">Tu Paquete</h2>
+                            <div id="summary-list" class="space-y-3 mb-6 border-b border-gray-700 pb-6 text-lg"></div>
+                            <div class="flex justify-between items-center text-2xl font-bold mb-6">
+                                <span>Total (MXN):</span>
+                                <span id="total-price">$0.00</span>
+                            </div>
+                            <button id="request-quote-btn" class="w-full bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors text-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>Solicitar Cotización</button>
                         </div>
                     </div>
-                    <!-- Extras -->
-                    <div class="md:col-span-2">
-                        <h3 class="text-2xl font-bold text-yellow-400 mb-4">3. Añade Extras Increíbles</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="checkbox" name="extra" value="batucada" class="hidden"><i data-feather="gift" class="mr-3 text-yellow-400"></i><span>Show de Batucada</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="checkbox" name="extra" value="pantalla" class="hidden"><i data-feather="tv" class="mr-3 text-yellow-400"></i><span>Pantalla Gigante</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="checkbox" name="extra" value="pirotecnia" class="hidden"><i data-feather="zap" class="mr-3 text-yellow-400"></i><span>Pirotecnia Fría</span></label>
-                            <label class="flex items-center bg-gray-800 p-4 rounded-lg cursor-pointer hover:bg-gray-700"><input type="checkbox" name="extra" value="sax" class="hidden"><i data-feather="wind" class="mr-3 text-yellow-400"></i><span>Saxofonista para Recepción</span></label>
-                        </div>
-                    </div>
-                    <!-- Botón -->
-                    <div class="md:col-span-2 text-center mt-6">
-                         <button type="submit" class="bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-400 transition-transform transform hover:scale-105">Generar mi Cotización</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
 
@@ -278,17 +282,14 @@
         <!-- =============================================================== -->
         <div id="page-galeria" class="page-section">
             <div class="container mx-auto px-6 py-20">
-                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">Nuestra Energía en Fotos</h1>
-                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">Una imagen vale más que mil palabras. Aquí te mostramos la pasión y la energía que llevamos a cada escenario.</p>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-aos="zoom-in-up">
-                    <a href="https://placehold.co/800x600/111827/facc15?text=Boda+1" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Boda+1" alt="Boda 1" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=Evento+Corp" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Evento+Corp" alt="Evento Corporativo" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=XV+Años" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=XV+Años" alt="XV Años" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=En+el+Escenario" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=En+el+Escenario" alt="En el Escenario" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=Público+Feliz" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Público+Feliz" alt="Público Feliz" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=Detalles" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Detalles" alt="Detalles" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                    <a href="https://placehold.co/800x600/111827/facc15?text=Saxofonista" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Saxofonista" alt="Saxofonista" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
-                     <a href="https://placehold.co/800x600/111827/facc15?text=Fiesta+Total" data-fancybox="gallery" class="group block"><img src="https://placehold.co/800x600/111827/facc15?text=Fiesta+Total" alt="Fiesta Total" class="rounded-lg w-full h-full object-cover group-hover:opacity-75 transition-opacity"></a>
+                <h1 class="text-5xl font-bold text-center mb-16" data-aos="fade-up">Momentos Inolvidables</h1>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div data-aos="zoom-in"><a href="https://placehold.co/800x600/111827/facc15?text=Fiesta+1" data-fancybox="gallery"><img src="https://placehold.co/600x600/111827/facc15?text=Fiesta+1" class="rounded-lg shadow-lg w-full h-full object-cover"></a></div>
+                    <div data-aos="zoom-in"><a href="https://placehold.co/800x600/111827/facc15?text=Boda" data-fancybox="gallery"><img src="https://placehold.co/600x600/111827/facc15?text=Boda" class="rounded-lg shadow-lg w-full h-full object-cover"></a></div>
+                    <div class="md:col-span-2 row-span-2" data-aos="zoom-in"><a href="https://placehold.co/1200x1200/111827/facc15?text=Show+de+Luces" data-fancybox="gallery"><img src="https://placehold.co/1200x1200/111827/facc15?text=Show+de+Luces" class="rounded-lg shadow-lg w-full h-full object-cover"></a></div>
+                    <div data-aos="zoom-in"><a href="https://placehold.co/800x600/111827/facc15?text=XV+Años" data-fancybox="gallery"><img src="https://placehold.co/600x600/111827/facc15?text=XV+Años" class="rounded-lg shadow-lg w-full h-full object-cover"></a></div>
+                    <div data-aos="zoom-in"><a href="https://placehold.co/800x600/111827/facc15?text=Público" data-fancybox="gallery"><img src="https://placehold.co/600x600/111827/facc15?text=Público" class="rounded-lg shadow-lg w-full h-full object-cover"></a></div>
+                    <div class="col-span-2 md:col-span-3 lg:col-span-4" data-aos="fade-up"><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg mt-8"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de la banda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
                 </div>
             </div>
         </div>
@@ -298,13 +299,20 @@
         <!-- =============================================================== -->
         <div id="page-testimonios" class="page-section">
             <div class="container mx-auto px-6 py-20">
-                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">Lo que Dicen de Nosotros</h1>
-                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">La opinión de nuestros clientes es nuestro mejor aval. Lee las experiencias de quienes ya vivieron la #ExperienciaCélula.</p>
-                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up"><div class="flex items-center mb-2"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300 mb-4 italic">"¡La mejor decisión para nuestra boda! Célula prendió la fiesta desde el minuto uno. ¡Súper profesionales y un repertorio increíble!"</p><p class="font-bold text-white">- Ana y Juan, Boda</p></div>
-                    <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100"><div class="flex items-center mb-2"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300 mb-4 italic">"Contratamos a Célula para nuestra fiesta de fin de año y fue un éxito total. Un repertorio súper variado que gustó a todos."</p><p class="font-bold text-white">- Corporativo XYZ, Evento Empresarial</p></div>
-                    <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up"><div class="flex items-center mb-2"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300 mb-4 italic">"Hicieron de mis XV años una noche mágica. Todos mis amigos no pararon de bailar. ¡Los mejores!"</p><p class="font-bold text-white">- Sofía, XV Años</p></div>
-                    <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100"><div class="flex items-center mb-2"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300 mb-4 italic">"Profesionalismo y energía de principio a fin. El audio e iluminación de primer nivel. Recomendados al 100%."</p><p class="font-bold text-white">- Event Planners México</p></div>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h1 class="text-5xl font-bold mb-4">Lo que dicen nuestros clientes</h1>
+                    <div class="flex items-center justify-center mt-4">
+                        <span class="text-4xl font-bold text-yellow-400 mr-2">4.9</span>
+                        <div class="flex items-center mr-4">
+                            <i data-feather="star" class="h-7 w-7 star-filled"></i><i data-feather="star" class="h-7 w-7 star-filled"></i><i data-feather="star" class="h-7 w-7 star-filled"></i><i data-feather="star" class="h-7 w-7 star-filled"></i><i data-feather="star" class="h-7 w-7 star-filled"></i>
+                        </div>
+                        <a href="#" class="text-gray-400 hover:underline text-lg">(123 reseñas en Google)</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up"><div class="flex items-center mb-4"><img class="h-12 w-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/FBBF24/111827?text=AJ" alt="Avatar Ana y Juan"><div><p class="font-bold text-lg">Ana y Juan</p><p class="text-sm text-gray-500">hace 2 semanas</p></div></div><div class="flex items-center mb-4"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300">¡La mejor decisión para nuestra boda! Célula prendió la fiesta desde el minuto uno. Todos nuestros invitados nos felicitaron por la música. ¡Súper profesionales y con una energía increíble!</p></div>
+                    <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100"><div class="flex items-center mb-4"><img class="h-12 w-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/FBBF24/111827?text=M" alt="Avatar Mariana F."><div><p class="font-bold text-lg">Mariana F.</p><p class="text-sm text-gray-500">hace 1 mes</p></div></div><div class="flex items-center mb-4"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300">La fiesta de XV años de mi hija fue mágica gracias a ellos. Se adaptaron perfecto a lo que queríamos y la batucada fue el momento cumbre de la noche. ¡Gracias, Célula!</p></div>
+                    <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200"><div class="flex items-center mb-4"><img class="h-12 w-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/FBBF24/111827?text=CX" alt="Avatar Corp. XYZ"><div><p class="font-bold text-lg">Corporativo XYZ</p><p class="text-sm text-gray-500">hace 1 mes</p></div></div><div class="flex items-center mb-4"><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i><i data-feather="star" class="h-5 w-5 star-filled"></i></div><p class="text-gray-300">Contratamos a Célula para nuestra fiesta de fin de año y fue un éxito total. Un repertorio súper variado que puso a bailar a todos, desde los más jóvenes hasta los directores.</p></div>
                 </div>
             </div>
         </div>
@@ -340,95 +348,166 @@
         <!-- ================= PÁGINA DETALLADA: CONTACTO =================== -->
         <!-- =============================================================== -->
         <div id="page-contacto" class="page-section">
+            <section class="py-20 bg-gray-800">
+                <div class="container mx-auto px-6" data-aos="fade-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 class="text-5xl font-bold mb-4">¿Listos para la Fiesta?</h1>
+                            <p class="text-gray-400 mb-8 text-lg">Envíanos los detalles de tu evento y te prepararemos una cotización a la medida. ¡Hagamos que tu celebración sea legendaria!</p>
+                            <div class="space-y-4">
+                                <a href="https://wa.me/5215512345678" target="_blank" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="message-square" class="mr-3"></i> WhatsApp: 55 1234 5678</a>
+                                <a href="tel:+525512345678" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="phone" class="mr-3"></i> Teléfono: 55 1234 5678</a>
+                                <a href="mailto:contacto@grupocelula.com" class="flex items-center text-xl hover:text-yellow-400"><i data-feather="mail" class="mr-3"></i> email: contacto@grupocelula.com</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 p-8 rounded-lg shadow-xl">
+                            <form>
+                                <div class="mb-4"><label for="name" class="block mb-2 font-bold">Nombre</label><input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"></div>
+                                <div class="mb-4"><label for="email" class="block mb-2 font-bold">Email</label><input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div><label for="event-type" class="block mb-2 font-bold">Tipo de Evento</label><select id="event-type" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"><option>Boda</option><option>XV Años</option><option>Corporativo</option><option>Otro</option></select></div>
+                                    <div><label for="event-date" class="block mb-2 font-bold">Fecha</label><input type="date" id="event-date" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500" style="color-scheme: dark;"></div>
+                                </div>
+                                <div class="mb-4"><label for="message" class="block mb-2 font-bold">Mensaje</label><textarea id="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Cuéntanos más..."></textarea></div>
+                                <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors">Enviar Solicitud</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============== PÁGINA DETALLADA: REPERTORIO =================== -->
+        <div id="page-repertorio" class="page-section">
             <div class="container mx-auto px-6 py-20">
-                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">¡Hagamos Ruido Juntos!</h1>
-                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">¿Listo para llevar tu evento al siguiente nivel? Contáctanos. Estamos listos para escucharte.</p>
-                <div class="max-w-lg mx-auto bg-gray-800 rounded-lg p-8 shadow-lg" data-aos="zoom-in-up">
-                    <form action="#" method="POST">
-                        <div class="mb-4"><label for="contact-name" class="block text-gray-300 mb-2">Nombre</label><input type="text" id="contact-name" name="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-yellow-500" required></div>
-                        <div class="mb-4"><label for="contact-email" class="block text-gray-300 mb-2">Email</label><input type="email" id="contact-email" name="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-yellow-500" required></div>
-                        <div class="mb-4"><label for="contact-phone" class="block text-gray-300 mb-2">Teléfono</label><input type="tel" id="contact-phone" name="phone" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-yellow-500"></div>
-                        <div class="mb-4"><label for="contact-message" class="block text-gray-300 mb-2">Mensaje</label><textarea id="contact-message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-yellow-500" required></textarea></div>
-                        <div class="text-center"><button type="submit" class="bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition-colors">Enviar Mensaje</button></div>
-                    </form>
+                <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up">Nuestro Sabor Musical</h1>
+                <p class="text-xl text-center text-gray-400 max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">Tenemos un repertorio de más de 200 canciones para todos los gustos. Aquí una probada de nuestra versatilidad. ¡Dale play!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div data-aos="fade-right"><h2 class="text-3xl font-bold text-yellow-400 mb-4">Salsa, Cumbia y Latinos</h2><ul class="space-y-4 text-left"><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Vivir Mi Vida - Marc Anthony</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Oye Mujer - Raymix</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Cómo Te Voy a Olvidar - Ángeles Azules</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li></ul></div>
+                    <div data-aos="fade-left" data-aos-delay="100"><h2 class="text-3xl font-bold text-yellow-400 mb-4">Rock en tu Idioma</h2><ul class="space-y-4 text-left"><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>De Música Ligera - Soda Stereo</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Lamento Boliviano - Enanitos Verdes</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Cuando seas grande - Miguel Mateos</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li></ul></div>
+                    <div data-aos="fade-right"><h2 class="text-3xl font-bold text-yellow-400 mb-4">Pop y Éxitos de los 80s</h2><ul class="space-y-4 text-left"><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Devuélveme a mi chica - Hombres G</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Billie Jean - Michael Jackson</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Cuando calienta el sol - Luis Miguel</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li></ul></div>
+                    <div data-aos="fade-left" data-aos-delay="100"><h2 class="text-3xl font-bold text-yellow-400 mb-4">Reggaetón y Urbano</h2><ul class="space-y-4 text-left"><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Despacito - Luis Fonsi</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Gasolina - Daddy Yankee</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li><li class="bg-gray-800 p-4 rounded-lg flex justify-between items-center"><span>Titi Me Preguntó - Bad Bunny</span><audio controls class="h-8"><source src="audio-placeholder.mp3" type="audio/mpeg"></audio></li></ul></div>
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- =========== Footer (Persistente) =========== -->
     <footer class="bg-gray-900">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-yellow-400"><i data-feather="facebook" class="h-6 w-6"></i></a>
-                <a href="#" class="hover:text-yellow-400"><i data-feather="instagram" class="h-6 w-6"></i></a>
-                <a href="#" class="hover:text-yellow-400"><i data-feather="youtube" class="h-6 w-6"></i></a>
-                <a href="#" class="hover:text-yellow-400"><i data-feather="message-square" class="h-6 w-6"></i></a>
+        <div class="container mx-auto px-6 py-12 text-center text-gray-400">
+            <div class="mb-10" data-aos="fade-up">
+                <h3 class="text-lg font-bold text-gray-300 mb-6">Aceptamos</h3>
+                <div class="flex justify-center items-center flex-wrap gap-x-8 gap-y-4 text-gray-500">
+                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Visa</title><path d="M7.123 16.216h2.532L11.267 9.3H8.735l-1.612 6.916zm-4.288-.008L.417 6.324h2.5l1.18 6.84-.002.008h.002v-.008L5.275 16.208h-2.44zm11.956 0h2.184l-2.4-9.888h-2.184l2.4 9.888zm-5.064 0l1.6-6.832c.112-.48.424-.76.848-.76.24 0 .6.136.784.344l.384-2.04c-.376-.2-.92-.424-1.744-.424-1.16 0-2.024.7-2.424 2.056L9.587 16.2h2.552l-.184.016z"/></svg>
+                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Mastercard</title><circle cx="7" cy="12" r="7"/><path d="M17 12a7 7 0 11-14 0 7 7 0 0114 0z" fill-opacity=".8"/></svg>
+                    <svg class="h-8 w-auto hover:text-white transition" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>American Express</title><path d="M22.016 4H1.984C.888 4 0 4.888 0 5.984v12.032C0 19.112.888 20 1.984 20h20.032C23.112 20 24 19.112 24 18.016V5.984C24 4.888 23.112 4 22.016 4zM8.032 15.488H5.48V8.512h2.552v6.976zm4.64-6.976h2.624v1.888H12.64v1.248h2.24v1.888h-2.24v1.952h2.656V15.52h-5.2V8.512h2.528v.008zm6.912 4.168L18.064 8.512h-2.656l-2.4 4.168 2.4 4.224h2.656l-1.136-2.112z"/></svg>
+                    <span class="font-bold text-xl hover:text-white transition">CARNET</span>
+                    <span class="font-bold text-xl hover:text-white transition">SPEI</span>
+                    <i data-feather="dollar-sign" class="h-8 w-8 hover:text-white transition"></i>
+                </div>
             </div>
-            <p>&copy; <span id="current-year"></span> Grupo Musical Célula. Todos los derechos reservados.</p>
-            <p class="text-sm mt-2">Sitio diseñado por <a href="https://tuweb.com" class="underline hover:text-white">Tu Agencia Web</a></p>
+            <div class="flex justify-center space-x-6 mb-4"><a href="#" class="hover:text-yellow-400"><i data-feather="facebook"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="instagram"></i></a><a href="#" class="hover:text-yellow-400"><i data-feather="youtube"></i></a></div>
+            <p>&copy; 2025 Grupo Musical Célula. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- AOS (Animate On Scroll) Library JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          duration: 800,
-          once: true,
-      });
-    </script>
 
     <!-- Fancybox JS (para la galería) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Feather Icons
+        AOS.init({ duration: 800, once: false, offset: 50 });
         feather.replace();
 
-        // Navegación y cambio de página
-        const pages = document.querySelectorAll('.page-section');
+        const allPages = document.querySelectorAll('.page-section');
         const navLinks = document.querySelectorAll('.nav-link');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-
         function showPage(pageId) {
-            // Ocultar todas las páginas
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
-            // Mostrar la página solicitada
-            const activePage = document.getElementById(pageId);
-            if (activePage) {
-                activePage.classList.add('active');
+            allPages.forEach(page => page.classList.remove('active'));
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                AOS.refresh();
+                feather.replace();
             }
-
-            // Actualizar el link activo en el nav
             navLinks.forEach(link => {
-                if (link.dataset.page === pageId) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
+                link.classList.remove('active');
+                if(link.dataset.page === pageId) link.classList.add('active');
             });
-
-            // Ocultar menú móvil después de la selección
-            mobileMenu.classList.add('hidden');
-            window.scrollTo(0, 0); // Scroll al inicio de la página
+            window.scrollTo(0, 0);
         }
-
-        // Menú móvil
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Mostrar la página de inicio por defecto
         document.addEventListener('DOMContentLoaded', () => {
             showPage('page-home');
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+            initializePackageBuilder();
         });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        const mobilePageLinks = document.querySelectorAll('#mobile-menu a');
+        mobilePageLinks.forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        function initializePackageBuilder() {
+            const packageBuilderPage = document.getElementById('page-build-package');
+            if (!packageBuilderPage) return;
+            const inputs = packageBuilderPage.querySelectorAll('input[name="hours"], input[name="addon"]');
+            const summaryList = document.getElementById('summary-list');
+            const totalPriceEl = document.getElementById('total-price');
+            const requestQuoteBtn = document.getElementById('request-quote-btn');
+            function updatePackageSummary() {
+                let total = 0;
+                let summaryHTML = '';
+                let selectedItems = [];
+                const selectedHours = packageBuilderPage.querySelector('input[name="hours"]:checked');
+                if (selectedHours) {
+                    const price = parseFloat(selectedHours.dataset.price);
+                    const name = selectedHours.dataset.name;
+                    total += price;
+                    selectedItems.push({ name, price });
+                }
+                const selectedAddons = packageBuilderPage.querySelectorAll('input[name="addon"]:checked');
+                selectedAddons.forEach(addon => {
+                    const price = parseFloat(addon.dataset.price);
+                    const name = addon.dataset.name;
+                    total += price;
+                    selectedItems.push({ name, price });
+                });
+                if (selectedItems.length > 0) {
+                    summaryHTML = selectedItems.map(item => `<div class="flex justify-between text-gray-300"><span>${item.name}</span><span class="font-semibold text-white">$${item.price.toLocaleString('es-MX')}</span></div>`).join('');
+                    requestQuoteBtn.disabled = false;
+                } else {
+                    summaryHTML = '<p class="text-gray-500 text-center">Selecciona una opción para empezar.</p>';
+                    requestQuoteBtn.disabled = true;
+                }
+                summaryList.innerHTML = summaryHTML;
+                totalPriceEl.textContent = `$${total.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            }
+            inputs.forEach(input => input.addEventListener('change', updatePackageSummary));
+            requestQuoteBtn.addEventListener('click', () => {
+                const selectedItems = [];
+                const selectedHours = packageBuilderPage.querySelector('input[name="hours"]:checked');
+                if (selectedHours) selectedItems.push(selectedHours.dataset.name);
+                const selectedAddons = packageBuilderPage.querySelectorAll('input[name="addon"]:checked');
+                selectedAddons.forEach(addon => selectedItems.push(addon.dataset.name));
+                const totalPrice = totalPriceEl.textContent;
+                let message = "Hola, me gustaría cotizar el siguiente paquete personalizado que armé en su sitio web:\n\n";
+                message += "SERVICIOS SELECCIONADOS:\n";
+                message += "--------------------------\n";
+                message += selectedItems.join('\n');
+                message += `\n--------------------------\n`;
+                message += `TOTAL ESTIMADO: ${totalPrice}\n\n`;
+                message += "Por favor, quedo en espera de su contacto. ¡Gracias!";
+                const contactFormTextarea = document.querySelector('#page-contacto #message');
+                if(contactFormTextarea) {
+                    contactFormTextarea.value = message;
+                }
+                showPage('page-contacto');
+            });
+            updatePackageSummary();
+        }
 
         // Simulación de Login del Portal
         document.getElementById('login-form').addEventListener('submit', function(e) {
@@ -469,21 +548,6 @@
                 feather.replace();
             }, 1500);
         });
-
-        // Formulario de "Arma tu paquete"
-        document.getElementById('custom-package-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            const horas = formData.get('horas');
-            const audio = formData.get('audio');
-            const extras = formData.getAll('extra').join(', ') || 'ninguno';
-
-            const message = `¡Hola! Me gustaría cotizar un paquete con las siguientes características:%0A- *Horas de música:* ${horas} horas%0A- *Audio para:* ${audio} personas%0A- *Extras:* ${extras}%0A%0A¡Gracias!`;
-
-            const whatsappURL = `https://wa.me/5215512345678?text=${message}`;
-            window.open(whatsappURL, '_blank');
-        });
-
     </script>
 </body>
 </html>
